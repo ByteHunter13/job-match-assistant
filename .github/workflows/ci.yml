@@ -1,0 +1,34 @@
+# lint + tests
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend    # el pyproject.toml vive aquí
+    steps:
+      - uses: actions/checkout@v5
+      
+      - name: Install uv
+        uses: astral-sh/setup-uv@v10
+        with:
+          working-directory: backend  # lee backend/.python-version
+          enable-cache: true          # caché keyed por uv.lock
+      
+      - name: Install dependencies
+        run: uv sync --locked         # falla si uv.lock no coincide con pyproject
+
+      - name: Lint
+        run: uv run ruff check .
+
+      - name: Format check
+        run: uv run ruff format --check .
+
+      - name: Tests
+        run: uv run pytest

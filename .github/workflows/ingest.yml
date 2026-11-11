@@ -1,0 +1,27 @@
+name: Daily ingest
+
+on:
+  # Disabled until Phase 1: jobmatch.ingest does not exist yet, so a daily run would fail.
+  # schedule:
+  #   - cron: "0 12 * * *" # 12:00 UTC = 6:00 en CDMX
+  workflow_dispatch:     # botón para correrlo a mano desde la pestaña Actions
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+    steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v10
+        with:
+          working-directory: backend
+          enable-cache: true
+      - run: uv sync --locked --no-dev
+      - name: Run ingestion
+        env:
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: uv run python -m jobmatch.ingest

@@ -1,0 +1,61 @@
+# ---------- Secrets ----------
+.env
+.env.*
+!.env.example
+
+# ---------- Python ----------
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# ---------- Jupyter ----------
+.ipynb_checkpoints/
+
+# ---------- Data (only data/sample, data/labeled and the taxonomy are versioned) ----------
+data/raw/
+data/interim/
+data/processed/
+data/cache/
+data/cv/
+*.parquet
+*.sqlite
+*.db
+*.dump
+# Kaggle downloads
+*.zip
+kaggle.json
+
+# CVs and personal documents: never commit the real CV
+cv*.pdf
+CV*.pdf
+resume*.pdf
+
+# ---------- Frontend (Node / Next.js / Vite) ----------
+node_modules/
+.next/
+out/
+frontend/dist/
+.vercel/
+*.tsbuildinfo
+npm-debug.log*
+
+# ---------- Editors / OS ----------
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- Local tooling ----------
+.claude/settings.local.json
+*.log

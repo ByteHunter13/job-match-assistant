@@ -1,0 +1,10 @@
+# Install once (from backend/):  uv run pre-commit install
+# Run on all files:               uv run pre-commit run --all-files
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.17.4 # keep in sync with the ruff version in backend/uv.lock
+    hooks:
+      # Linter first: --fix can change code that then needs reformatting.
+      - id: ruff-check
+        args: [--fix]
+      - id: ruff-format
