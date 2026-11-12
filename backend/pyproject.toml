@@ -7,7 +7,9 @@ authors = [
     { name = "ByteHunter13" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "pydantic>=2.14.3",
+]
 
 [project.scripts]
 jobmatch = "jobmatch:main"
@@ -15,6 +17,14 @@ jobmatch = "jobmatch:main"
 [build-system]
 requires = ["uv_build>=0.13.7,<0.14.0"]
 build-backend = "uv_build"
+
+[tool.ruff]
+# Paths are relative to this file, so ruff resolves the same way whether it runs
+# from backend/ (CI) or from the repo root (pre-commit hook).
+src = ["src"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["jobmatch"]
 
 [dependency-groups]
 dev = [

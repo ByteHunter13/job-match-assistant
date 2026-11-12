@@ -1,0 +1,69 @@
+{
+  "count": 3,
+  "results": [
+    {
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "redirect_url": "https://www.adzuna.com.mx/details/5959905198?utm_medium=api&utm_source=41d58dc8",
+      "salary_max": 198000,
+      "location": {
+        "display_name": "México",
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "México"
+        ]
+      },
+      "salary_is_predicted": "0",
+      "id": "5959905198",
+      "created": "2026-11-09T22:47:50Z",
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTk1OTkwNTE5OCIsInMiOiJ4S0lCX2s3ZThSR0R3LURvSEw3WTlRIn0.bEVc5I3hf5at3UxpXf-UuQj7e_4ACobaEc1vAdNjkUQ",
+      "company": {
+        "__CLASS__": "Adzuna::API::Response::Company",
+        "display_name": "Unemplojorempleo"
+      },
+      "contract_type": "contract",
+      "salary_min": 198000,
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "tag": "unknown",
+        "label": "Unknown"
+      },
+      "title": "Digital Marketing Specialist - Home Office (Must be located in Hermosillo Son)",
+      "description": "Intugo is seeking a Digital Marketing Specialist responsible for managing and optimizing digital marketing strategies for multiple clients. This role involves working closely with internal teams to ensure campaign success across various channels, including SEO, paid search, social media, and website management. The ideal candidate is analytical, detail-oriented, and passionate about digital marketing, with a strong focus on delivering excellent client experiences and measurable results. Key Res…"
+    },
+    {
+      "id": "5943106416",
+      "location": {
+        "__CLASS__": "Adzuna::API::Response::Location",
+        "area": [
+          "México",
+          "Sonora",
+          "Hermosillo"
+        ],
+        "display_name": "Hermosillo, Sonora"
+      },
+      "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoieEtJQl9rN2U4UkdEdy1Eb0hMN1k5USIsImkiOiI1OTQzMTA2NDE2In0.WzVW0UKrnBTj6nHgB9Y7drjKdHxDF07PwLtoaTUAi3w",
+      "longitude": -111.621389,
+      "description": "At Intugo, we partner with international companies by providing administrative and operational support that helps them grow while creating quality employment opportunities in our community. We are currently seeking a Collections Specialist I to join a U.S.-based Accounting & Finance team on a 6-month temporary contract. In this role, you will be responsible for managing customer accounts, processing collections, applying payments, resolving billing discrepancies, and maintaining accurate financ…",
+      "contract_type": "contract",
+      "salary_is_predicted": "0",
+      "latitude": 28.558333,
+      "created": "2026-10-26T22:35:12Z",
+      "salary_max": 222000,
+      "redirect_url": "https://www.adzuna.com.mx/details/5943106416?utm_medium=api&utm_source=41d58dc8",
+      "__CLASS__": "Adzuna::API::Response::Job",
+      "category": {
+        "__CLASS__": "Adzuna::API::Response::Category",
+        "tag": "unknown",
+        "label": "Unknown"
+      },
+      "title": "Collections Specialist - Temporary",
+      "salary_min": 222000,
+      "company": {
+        "display_name": "Unemplojorempleo",
+        "__CLASS__": "Adzuna::API::Response::Company"
+      }
+    }
+  ],
+  "__CLASS__": "Adzuna::API::Response::JobSearchResults",
+  "mean": 210000
+}

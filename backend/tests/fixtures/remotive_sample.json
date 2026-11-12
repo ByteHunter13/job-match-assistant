@@ -1,0 +1,33 @@
+{
+  "0-legal-notice": "Synthetic fixture built from the documented Remotive schema. Replace with a recorded response.",
+  "job-count": 2,
+  "jobs": [
+    {
+      "id": 1001,
+      "url": "https://remotive.com/remote-jobs/data/senior-data-scientist-1001",
+      "title": " Senior Data Scientist ",
+      "company_name": "Example Analytics",
+      "company_logo": "https://remotive.com/job/1001/logo",
+      "category": "Data",
+      "job_type": "full_time",
+      "publication_date": "2026-11-10T10:23:26",
+      "candidate_required_location": "Americas",
+      "salary": "$120k - $150k",
+      "description": "<p>We use Python, SQL and PyTorch.</p>"
+    },
+    {
+      "id": 1002,
+      "url": "https://remotive.com/remote-jobs/data/data-analyst-1002",
+      "title": "Data Analyst",
+      "company_name": "Sample Co",
+      "company_logo": "",
+      "category": "Data",
+      "job_type": "",
+      "publication_date": "2026-11-09T08:00:00",
+      "candidate_required_location": "Worldwide",
+      "salary": "",
+      "description": "<p>Excel, Tableau and SQL.</p>",
+      "some_new_field": "ignored"
+    }
+  ]
+}
